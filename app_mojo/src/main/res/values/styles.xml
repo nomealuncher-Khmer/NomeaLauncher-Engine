@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Light or not? -->
+
+    <!-- Main Theme -->
     <style name="MojoLauncher" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="fontFamily">@font/kantumruy_pro</item>
+        <item name="android:fontFamily">@font/kantumruy_pro</item>
+
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -20,6 +24,7 @@
 
     <style name="MojoLauncher.AppTheme" parent="MojoLauncher"/>
 
+    <!-- SeekBar -->
     <style name="MojoLauncher.SeekBar" parent="Widget.AppCompat.SeekBar">
         <item name="android:progressDrawable">@drawable/minepb_progress</item>
         <item name="android:thumb">@drawable/mineknob_on_unfiltered</item>
@@ -28,6 +33,7 @@
         <item name="android:minHeight">4dp</item>
     </style>
 
+    <!-- Switch -->
     <style name="MojoLauncher.Switch" parent="Widget.AppCompat.CompoundButton.Switch">
         <item name="track">@drawable/mineknob_track_mask_unfiltered</item>
         <item name="trackTint">@color/mineknob_track_tint</item>
@@ -36,6 +42,7 @@
         <item name="switchMinWidth">40dp</item>
     </style>
 
+    <!-- Buttons -->
     <style name="MojoLauncher.Button" parent="Widget.AppCompat.Button">
         <item name="android:background">@drawable/button_flat</item>
     </style>
@@ -44,13 +51,14 @@
         <item name="android:background">@drawable/button_flat_toggle</item>
     </style>
 
-
+    <!-- Launcher Divider -->
     <style name="LauncherFragment_Divider">
         <item name="android:layout_width">@dimen/padding_tiny</item>
         <item name="android:layout_height">0dp</item>
         <item name="android:background">@color/divider</item>
     </style>
 
+    <!-- Menu Buttons -->
     <style name="LauncherMenuButton" parent="Widget.AppCompat.Button">
         <item name="android:background">?android:attr/selectableItemBackground</item>
     </style>
@@ -59,6 +67,7 @@
         <item name="android:layout_height">@dimen/_66sdp</item>
     </style>
 
+    <!-- Thick Divider -->
     <style name="ThickDivider">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/_1sdp</item>
@@ -66,9 +75,11 @@
     </style>
 
     <item name="dimension_tracker" type="id" />
+
     <style name="DimensionTracker">
         <item name="android:id">@id/dimension_tracker</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
     </style>
+
 </resources>
