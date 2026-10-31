@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Version menu -->
+    <string name="create_profile_vanilla_like_versions">កំណែ Minecraft ដើម (Vanilla)</string>
+    <string name="create_instance_vanilla">បង្កើតកំណែ Vanilla</string>
+    <string name="mod_dl_install_optifine">ដំឡើង OptiFine</string>
+    <string name="create_profile_modded_versions">កំណែ Minecraft ដែលមាន Mod</string>
+    <string name="modloader_dl_install_fabric_instance">ដំឡើង Fabric</string>
+    <string name="modloader_dl_install_quilt_instance">ដំឡើង Quilt</string>
+    <string name="modloader_dl_install_legacy_fabric_instance">ដំឡើង Legacy Fabric</string>
+    <string name="modloader_dl_install_forge_instance">ដំឡើង Forge</string>
+    <string name="modloader_dl_install_neoforge_instance">ដំឡើង NeoForge</string>
+    <string name="modpack_install_instance_button">ដំឡើង Modpack</string>
+    <string name="create_bta_instance">បង្កើតកំណែ Better Than Adventure</string>
+
+    <!-- Download cache -->
+    <string name="pref_clean_partfiles_title">សម្អាត Cache ទាញយក</string>
+    <string name="pref_clean_partfiles_subtitle_wait">សម្អាតឯកសារ Minecraft ដែលទាញយកមិនទាន់ចប់។ កំពុងគណនាទំហំ…</string>
+    <string name="pref_clean_partfiles_subtitle">សម្អាតឯកសារ Minecraft ដែលទាញយកមិនទាន់ចប់។ ប្រើប្រាស់ទំហំ %.2f MB</string>
+    <string name="clean_partfiles_wait">កំពុងសម្អាត Cache ទាញយក…</string>
+    <string name="warn_auth_type_missing">%s មិនអាចប្រើបានទេ។ កំពុងប្រើគណនី Local ជំនួស</string>
+
+</resources>
