@@ -11,7 +11,6 @@ import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
 import android.system.Os;
-import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -65,7 +64,6 @@ public class LauncherActivity extends BaseActivity {
     // Nomea Launcher Music
     private MediaPlayer mMusicPlayer;
 
-    /* Allows to switch from one button "type" to another */
     private final FragmentManager.FragmentLifecycleCallbacks mFragmentCallbackListener =
             new FragmentManager.FragmentLifecycleCallbacks() {
 
@@ -89,16 +87,13 @@ public class LauncherActivity extends BaseActivity {
         }
     };
 
-    /* Listener for the back button in settings */
     private final ExtraListener<String> mBackPreferenceListener = (key, value) -> {
         if (value.equals("true")) onBackPressed();
         return false;
     };
 
-    /* Listener for the auth method selection screen */
     private final ExtraListener<Boolean> mSelectAuthMethod = (key, value) -> {
 
-        // The "false" value is used to stop auth method selection
         FragmentManager manager = getSupportFragmentManager();
 
         if (!value || manager.isStateSaved()) return false;
@@ -117,8 +112,7 @@ public class LauncherActivity extends BaseActivity {
         return false;
     };
 
-    /* Listener for the settings fragment */
-    private final View.OnClickListener mSettingButtonListener = v -> {
+    private final android.view.View.OnClickListener mSettingButtonListener = v -> {
 
         FragmentManager manager = getSupportFragmentManager();
 
@@ -206,10 +200,17 @@ public class LauncherActivity extends BaseActivity {
 
         if (mMusicPlayer == null) {
 
-            mMusicPlayer = MediaPlayer.create(
-                    this,
-                    R.raw.nomea_music
+            int musicResId = getResources().getIdentifier(
+                    "nomea_music",
+                    "raw",
+                    getPackageName()
             );
+
+            if (musicResId == 0) {
+                return;
+            }
+
+            mMusicPlayer = MediaPlayer.create(this, musicResId);
 
             if (mMusicPlayer == null) {
                 return;
@@ -401,7 +402,6 @@ public class LauncherActivity extends BaseActivity {
         );
     }
 
-    /** Custom implementation to feel more natural when a backstack isn't present */
     @Override
     public void onBackPressed() {
 
@@ -483,7 +483,6 @@ public class LauncherActivity extends BaseActivity {
         showNotificationPermissionReasoning();
     }
 
-    // Call async
     private void checkPreviousInstalls() {
 
         final String[] packages = {
@@ -551,7 +550,6 @@ public class LauncherActivity extends BaseActivity {
                 .apply();
     }
 
-    /** Stuff all the view boilerplate here */
     private void bindViews() {
 
         mFragmentView = findViewById(R.id.container_fragment);
@@ -560,4 +558,4 @@ public class LauncherActivity extends BaseActivity {
 
         mProgressLayout = findViewById(R.id.progress_layout);
     }
-    }
+            }
