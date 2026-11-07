@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="control_button_color">#4CC4C4C4</color>
-    <color name="control_button_pressed_color">#4D000000</color>
 
+    <!-- NOMEA RED NEON -->
+    <color name="control_button_color">#33FFFFFF</color>
+    <color name="control_button_pressed_color">#55E50914</color>
+
+    <!-- BUTTON COLORS -->
     <color name="minebutton_color">#E50914</color>
-    <color name="minebutton_secondary">#2a2a2a</color>
-    <color name="background_app">#0B0B0B</color>
-    <color name="divider">@color/background_overlay</color>
-    <color name="background_overlay">#464646</color>
-    <color name="background_status_bar">#242424</color>
-    <color name="background_bottom_bar">#151515</color>
+    <color name="minebutton_secondary">#1A1A20</color>
+
+    <!-- BACKGROUND -->
+    <color name="background_app">#08080B</color>
+    <color name="background_overlay">#292930</color>
+    <color name="background_status_bar">#050507</color>
+    <color name="background_bottom_bar">#111116</color>
+
+    <!-- DIVIDER -->
+    <color name="divider">#55E50914</color>
+
+    <!-- ICONS -->
     <color name="icon_outline_color">#FFFFFF</color>
 
+    <!-- TEXT -->
     <color name="primary_text">#FFFFFF</color>
-    <color name="secondary_text">#B2B2B2</color>
+    <color name="secondary_text">#A5A5B0</color>
+
+    <!-- NOMEA ACCENT -->
+    <color name="nomea_red">#FF1725</color>
+    <color name="nomea_dark_red">#8B0000</color>
+    <color name="nomea_glass">#26FFFFFF</color>
 
 </resources>
