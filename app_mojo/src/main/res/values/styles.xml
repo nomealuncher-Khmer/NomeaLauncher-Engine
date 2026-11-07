@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Main Theme -->
+    <!-- NOMEA MAIN THEME -->
     <style name="MojoLauncher" parent="@style/Theme.AppCompat.NoActionBar">
         <item name="fontFamily">@font/kantumruy_pro</item>
         <item name="android:fontFamily">@font/kantumruy_pro</item>
@@ -9,22 +9,27 @@
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <item name="android:windowContentOverlay">@null</item>
+
         <item name="android:statusBarColor">@color/background_status_bar</item>
         <item name="android:navigationBarColor">@color/background_app</item>
+
         <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
         <item name="android:textSize">@dimen/_12ssp</item>
-        <item name="dialogCornerRadius">0dp</item>
+        <item name="dialogCornerRadius">12dp</item>
+
         <item name="android:seekBarStyle">@style/MojoLauncher.SeekBar</item>
         <item name="seekBarStyle">@style/MojoLauncher.SeekBar</item>
+
         <item name="android:switchStyle">@style/MojoLauncher.Switch</item>
         <item name="switchStyle">@style/MojoLauncher.Switch</item>
+
         <item name="buttonStyle">@style/MojoLauncher.Button</item>
         <item name="android:buttonStyleToggle">@style/MojoLauncher.Button.Toggle</item>
     </style>
 
     <style name="MojoLauncher.AppTheme" parent="MojoLauncher"/>
 
-    <!-- SeekBar -->
+    <!-- NOMEA SEEKBAR -->
     <style name="MojoLauncher.SeekBar" parent="Widget.AppCompat.SeekBar">
         <item name="android:progressDrawable">@drawable/minepb_progress</item>
         <item name="android:thumb">@drawable/mineknob_on_unfiltered</item>
@@ -33,7 +38,7 @@
         <item name="android:minHeight">4dp</item>
     </style>
 
-    <!-- Switch -->
+    <!-- NOMEA SWITCH -->
     <style name="MojoLauncher.Switch" parent="Widget.AppCompat.CompoundButton.Switch">
         <item name="track">@drawable/mineknob_track_mask_unfiltered</item>
         <item name="trackTint">@color/mineknob_track_tint</item>
@@ -42,39 +47,45 @@
         <item name="switchMinWidth">40dp</item>
     </style>
 
-    <!-- Buttons -->
+    <!-- NOMEA BUTTON -->
     <style name="MojoLauncher.Button" parent="Widget.AppCompat.Button">
         <item name="android:background">@drawable/button_flat</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="MojoLauncher.Button.Toggle" parent="MojoLauncher.Button">
         <item name="android:background">@drawable/button_flat_toggle</item>
     </style>
 
-    <!-- Launcher Divider -->
+    <!-- NOMEA DIVIDER -->
     <style name="LauncherFragment_Divider">
         <item name="android:layout_width">@dimen/padding_tiny</item>
         <item name="android:layout_height">0dp</item>
         <item name="android:background">@color/divider</item>
     </style>
 
-    <!-- Menu Buttons -->
+    <!-- NOMEA MENU BUTTON -->
     <style name="LauncherMenuButton" parent="Widget.AppCompat.Button">
         <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">48dp</item>
     </style>
 
     <style name="LauncherMenuButton.Universal" parent="LauncherMenuButton">
         <item name="android:layout_height">@dimen/_66sdp</item>
     </style>
 
-    <!-- Thick Divider -->
+    <!-- NOMEA THICK DIVIDER -->
     <style name="ThickDivider">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/_1sdp</item>
         <item name="android:background">?android:attr/listDivider</item>
     </style>
 
-    <item name="dimension_tracker" type="id" />
+    <!-- DIMENSION TRACKER -->
+    <item name="dimension_tracker" type="id"/>
 
     <style name="DimensionTracker">
         <item name="android:id">@id/dimension_tracker</item>
